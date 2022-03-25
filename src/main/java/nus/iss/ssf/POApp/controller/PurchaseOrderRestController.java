@@ -38,7 +38,6 @@ public class PurchaseOrderRestController {
         req = reader.readObject();
         }
         
-        System.out.println(">>>>>: " + req);
         String name = req.getString("name");
         JsonArray array = req.getJsonArray("lineItems");
 
