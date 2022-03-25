@@ -31,6 +31,7 @@ public class QuotationService {
     private static final String QUOTE_URL = "/quotation";
 
     public Optional<Quotation> getQuotations(List<String> items) {
+        
         JsonArrayBuilder arrBuilder = Json.createArrayBuilder();
         for (String i : items) {
             arrBuilder.add(i);
